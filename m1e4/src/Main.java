@@ -2,7 +2,7 @@ public class Main {
 
 	public static House createHouse(){
 		
-		House house = new.House;
+		House house = new House();
 		house.address = "str1";
 		house.countOfFloors = 5;
 		house.appartmentsCount = 10;
@@ -15,23 +15,23 @@ public class Main {
 		House myHome = createHouse();
 		House myWork = createHouse();
 		
-		System.out.println(myHouse.owner + myHouse.address);
+		System.out.println(myHome.owner + myHome.address);
 		System.out.println(myWork.owner + myWork.address);
 
-		myHouse.address = "Tula, Hvorostuhina 11";
-		myHouse.countOfFloors = 9;
-		myHouse.appartmentsCount = 36;
-		myHouse.owner = "JK";
+        myHome.address = "Tula, Hvorostuhina 11";
+        myHome.countOfFloors = 9;
+        myHome.appartmentsCount = 36;
+        myHome.owner = "JK";
 
 		myWork.address = "Tula, Lenina 6";
 		myWork.countOfFloors = 11;
 		myWork.appartmentsCount = 213;
 		myWork.owner = "Zdravservice";
 
-		System.out.println(myHouse.owner + myHouse.address);
+		System.out.println(myHome.owner + myHome.address);
 		System.out.println(myWork.owner + myWork.address);
 
-		myHouse = null;
+        myHome = null;
 		myWork = null;
 
 	}
